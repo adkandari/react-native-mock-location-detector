@@ -31,6 +31,9 @@ If you are building a location based app in RN, you have to validate if the user
 
 
 ## Usage
+1. Make sure your app has location permission, before calling this function. 
+2. Arguments of function checkMockLocationProvider: Dailogbox Title, Dialogbox Text, Dialogbox Button Text
+
 ```javascript
 import RNMockLocationDetector from 'react-native-mock-location-detector';
 
@@ -41,7 +44,6 @@ RNMockLocationDetector.checkMockLocationProvider(
     "Mock Location Detected",
     "Please remove any mock location app first to continue using this app.",
     "I Understand"
-  ); //1. Make sure your app has location permission, before calling this function. 2. Arguments of function (Dailogbox Title, //Dialogbox Text, Dialogbox Button Text)
-
+  ); 
 ```
   
