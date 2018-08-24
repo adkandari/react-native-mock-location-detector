@@ -1,5 +1,7 @@
+## React Native Mock Location Detector / Location Spoof Apps Detector
 
-# react-native-mock-location-detector
+If you are building a location based app in RN, you have to validate if the user is using location spoofing apps or not. This library doesn't let the user use the app if any mock location apps are active on the device.
+
 
 ## Getting started
 
