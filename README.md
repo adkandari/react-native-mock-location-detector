@@ -32,7 +32,14 @@
 ```javascript
 import RNMockLocationDetector from 'react-native-mock-location-detector';
 
-// TODO: What to do with the module?
 RNMockLocationDetector;
+
+
+RNMockLocationDetector.checkMockLocationProvider(
+    "Mock Location Detected",
+    "Please remove any mock location app first to continue using this app.",
+    "I Understand"
+  ); //1. Make sure your app has location permission, before calling this function. 2. Arguments of function (Dailogbox Title, //Dialogbox Text, Dialogbox Button Text)
+
 ```
   
