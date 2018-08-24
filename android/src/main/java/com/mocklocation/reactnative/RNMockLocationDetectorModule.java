@@ -71,10 +71,6 @@ public class RNMockLocationDetectorModule extends ReactContextBaseJavaModule {
             if (location != null) {
               // Logic to handle location object
               if (isLocationFromMockProvider(getCurrentActivity(), location)) {
-                // TODO: Remove toasts in production
-                Toast.makeText(getReactApplicationContext(), "Location is Spoofed", Toast.LENGTH_LONG).show();
-
-                // showAlertDailog();
                 final AlertDialog.Builder builder = new AlertDialog.Builder(getCurrentActivity());
                 builder.setTitle(dialogTitle);
                 builder.setMessage(dialogMessage);
@@ -86,11 +82,7 @@ public class RNMockLocationDetectorModule extends ReactContextBaseJavaModule {
                 });
                 builder.show();
 
-              } else {
-                // TODO: Remove toasts in production
-                Toast.makeText(getReactApplicationContext(), "Location Not Spoofed", Toast.LENGTH_LONG).show();
-
-              }
+              } 
             }
           }
 
