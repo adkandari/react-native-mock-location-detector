@@ -37,9 +37,6 @@ If you are building a location based app in RN, you have to validate if the user
 ```javascript
 import RNMockLocationDetector from 'react-native-mock-location-detector';
 
-RNMockLocationDetector;
-
-
 RNMockLocationDetector.checkMockLocationProvider(
     "Mock Location Detected",
     "Please remove any mock location app first to continue using this app.",
