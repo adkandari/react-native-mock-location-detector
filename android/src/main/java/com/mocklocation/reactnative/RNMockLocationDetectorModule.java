@@ -51,6 +51,7 @@ public class RNMockLocationDetectorModule extends ReactContextBaseJavaModule {
     return "RNMockLocationDetector";
   }
 
+  
   /** Java code for checkLocationProvide */
   @ReactMethod
   public void checkMockLocationProvider(final String dialogTitle, final String dialogMessage,
