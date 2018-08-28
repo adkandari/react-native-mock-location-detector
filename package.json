@@ -11,6 +11,14 @@
   ],
   "author": "Aditya Kandari <adkandari@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/oblador/react-native-vector-icons",
+  "bugs": {
+    "url": "https://github.com/oblador/react-native-vector-icons/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oblador/react-native-vector-icons.git"
+  },
   "peerDependencies": {
     "react-native": "^0.41.2"
   }
