@@ -1,6 +1,6 @@
 {
   "name": "react-native-mock-location-detector",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Detects if the device is using mock location app to spoof it's real location. In that case user will be prompted to fix the mock location settings first before using the app.",
   "main": "index.js",
   "scripts": {},
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/oblador/react-native-vector-icons.git"
+    "url": "git://github.com/adkandari/react-native-mock-location-detector.git"
   },
   "peerDependencies": {
     "react-native": "^0.41.2"
