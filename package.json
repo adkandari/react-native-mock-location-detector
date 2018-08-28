@@ -11,9 +11,9 @@
   ],
   "author": "Aditya Kandari <adkandari@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/oblador/react-native-vector-icons",
+  "homepage": "https://github.com/adkandari/react-native-mock-location-detector",
   "bugs": {
-    "url": "https://github.com/oblador/react-native-vector-icons/issues"
+    "url": "https://github.com/adkandari/react-native-mock-location-detector/issues"
   },
   "repository": {
     "type": "git",
