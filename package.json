@@ -1,6 +1,6 @@
 {
   "name": "react-native-mock-location-detector",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Detects if the device is using mock location app to spoof it's real location. In that case user will be prompted to fix the mock location settings first before using the app.",
   "main": "index.js",
   "scripts": {},
