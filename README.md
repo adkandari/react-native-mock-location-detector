@@ -46,6 +46,4 @@ RNMockLocationDetector.checkMockLocationProvider(
   ); 
 ```
 
-## Example Project 
-You can find the example project here - https://github.com/adkandari/react-native-mock-location-detector-example
   
