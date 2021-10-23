@@ -56,7 +56,7 @@ public class RNMockLocationDetectorModule extends ReactContextBaseJavaModule {
                 Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
             ActivityCompat.checkSelfPermission(getCurrentActivity(),
                 Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            return;
+            return RNMockLocationDetectorModule.promise.resolve(false);
         }
         FusedLocationProviderClient mFusedLocationClient;
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(getCurrentActivity());
