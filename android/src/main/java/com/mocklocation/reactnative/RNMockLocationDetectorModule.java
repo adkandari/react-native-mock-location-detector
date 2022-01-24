@@ -60,20 +60,22 @@ public class RNMockLocationDetectorModule extends ReactContextBaseJavaModule {
         }
         FusedLocationProviderClient mFusedLocationClient;
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(getCurrentActivity());
-        mFusedLocationClient.getLastLocation().addOnSuccessListener(getCurrentActivity(),
-            new OnSuccessListener < Location > () {
-                @Override
-                public void onSuccess(Location location) {
-                    if (location == null) {
-                      RNMockLocationDetectorModule.promise.resolve(false);
-                    }
-                    else if (isLocationFromMockProvider(getCurrentActivity(), location)) {
-                      RNMockLocationDetectorModule.promise.resolve(true);
-                    } else{
-                      RNMockLocationDetectorModule.promise.resolve(false);
-                    }
-                }
-            });
+        reactContext.runOnUiQueueThread(()->{
+            mFusedLocationClient.getLastLocation().addOnSuccessListener(getCurrentActivity(),
+                    new OnSuccessListener < Location > () {
+                        @Override
+                        public void onSuccess(Location location) {
+                            if (location == null) {
+                                RNMockLocationDetectorModule.promise.resolve(false);
+                            }
+                            else if (isLocationFromMockProvider(getCurrentActivity(), location)) {
+                                RNMockLocationDetectorModule.promise.resolve(true);
+                            } else{
+                                RNMockLocationDetectorModule.promise.resolve(false);
+                            }
+                        }
+        });
+                    });
     }
 
     public boolean isLocationFromMockProvider(Context context, Location location) {
