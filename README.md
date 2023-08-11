@@ -1,3 +1,5 @@
+Hi, I am sorry I am not maintaining this library from quite sometime now. You can check a new fork of this one https://github.com/jpudysz/react-native-turbo-mock-location-detector, looks like it is maintained regularly. Thanks to https://github.com/jpudysz
+
 ## React Native Mock Location Detector / Location Spoof Apps Detector
 
 ⚠️ A fork of [react-native-mock-location-detector](https://github.com/adkandari/react-native-mock-location-detector) but with fixes.
